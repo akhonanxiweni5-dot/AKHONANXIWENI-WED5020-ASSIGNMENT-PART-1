@@ -3,16 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Enquire</title>
 </head>
 <body>
-   <nav>
+   <h1><strong>Akhona Clinic</strong></h1>
+    <nav>
     <a href="index.html">Home</a>
-    <a href="contactus.html">Contact</a>
     <a href="about us.html">About</a>
     <a href="contactus.html">Contact Us Page</a>
     <a href="Enquiry.html">Enquiry</a>
     <a href="Services.html">Services</a>
-   </nav> 
+   </nav><!DOCTYPE html>
+   <main>
+    <h2>General Enquiry Form</h2>
+        <p>If you have any questions regarding our database introduction project, clinic hours, or medical services, please fill out the form below:</p>
+
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Enquiry Details</legend>
+                
+                <p>
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name" required>
+                </p>
+
+                <p>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone">
+                </p>
+
+                <p>
+                    <label for="subject">Enquiry Subject:</label><br>
+                    <input type="text" id="subject" name="subject" required>
+                </p>
+
+                <p>
+                    <label for="enquiry_type">Type of Enquiry:</label><br>
+                    <select id="enquiry_type" name="enquiry_type">
+                        <option value="general">General Information</option>
+                        <option value="medical">Medical Services</option>
+                        <option value="project">Project / Administrative</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="message">Your Message:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Submit Enquiry</button>
+                    <button type="reset">Clear Form</button>
+                </p>
+            </fieldset>
+        </form>
+   </main>
+   <footer>
+    <p>&copy; 2026 Akhona Clinic. Developed by Akhona Nxiweni (ST10166505).</p>
+   </footer>
 </body>
 </html>
